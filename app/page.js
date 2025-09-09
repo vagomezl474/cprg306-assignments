@@ -12,7 +12,6 @@ export default function Home()
       <h1>CPRG306 Assignments</h1>
       <ul>
         <li><Link href="./week-2">Week 2 Assignment</Link></li>
-        <StudentInfo/>
       </ul>
     </main>
   );
