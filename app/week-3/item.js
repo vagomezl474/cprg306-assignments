@@ -1,18 +1,15 @@
 
 
 
-export default function ItemsComp()
+export default function Item({itemObj})
 {
 
-    let {name, quantity, category} = Item;
-
-    
+    let {name, quantity, category} = itemObj;
 
 
 return(
-    <main className = "bg-cyan-800 m-4 p-4">
-        <h1 className="text-3xl">Shopping List!</h1>
-        <ul>
+    <main className = "bg-gray-800 m-4 p-2">
+        <ul className="bg-black">
             <li>Name: {name} </li>
             <li>Quantity: {quantity}</li>
             <li>Category: {category}</li>

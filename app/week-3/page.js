@@ -1,21 +1,12 @@
+import ItemList from "./item-list";
 
-export default function itemPage(itemLIST)
-{
-
-
-let {Iname, Iquantity, Icategory} = itemLIST;
-
+export default function Page() {
 
 return(
-    <main className = "bg-cyan-800 m-4 p-4">
-        <h1 className="text-3xl">ShoppingList</h1>
-        <ul>
-            <li>Name: {Iname} </li>
-            <li>Quantity: {Iquantity}</li>
-            <li>Category: {Icategory}</li>
-        </ul>
+    <main className = "bg-gray-800 m-4 p-2">
+        <h1 className="text-3xl text-blue-300">Shopping List</h1>
+        <ItemList />
     </main>
 );
-
 
 }

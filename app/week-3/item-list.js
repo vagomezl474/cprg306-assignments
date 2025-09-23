@@ -1,16 +1,8 @@
-import itemPage from "./page";
+import Item from "./item";
 
-export default function itemList()
-{
+export default function ItemList() {
 
-    let ItemList = 
-    {
-        name: [],
-        quantity: [],
-        category: [],
-    }
-
-    const item1 = {
+const item1 = {
     name: "milk, 4 L 🥛",
     quantity: 1,
     category: "dairy",
@@ -82,15 +74,21 @@ const item12 = {
     category: "household",
 };
 
-return(
-    <main>
-        <h1>Shopping List</h1>
-        <itemPage
-        name={ItemList.name}
-        quantity={ItemList.quantity}
-        category={ItemList.category}
-        />
-    </main>
+return (
+    <div>
+        <Item itemObj={item1} />
+        <Item itemObj={item2} />
+        <Item itemObj={item3} />
+        <Item itemObj={item4} />
+        <Item itemObj={item5} />
+        <Item itemObj={item6} />
+        <Item itemObj={item7} />
+        <Item itemObj={item8} />
+        <Item itemObj={item9} />
+        <Item itemObj={item10} />
+        <Item itemObj={item11} />
+        <Item itemObj={item12} />
+        
+    </div>
 );
-
 }
