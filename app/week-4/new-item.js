@@ -16,13 +16,15 @@ export default function NewItemPage(){
     }
 
     return(
-    <div>
-    <h2 className="text-2xl text-amber-600"> Press to increase or decrease! </h2>
-    <p className="text-4xl text-amber-800">{quantity}</p>
+    <section className="bg-blue-200 rounded-2xl py-16" >
+    <div className="max-w-4xl mx-auto px-4 text-center">
+    <h2 className="text-4xl font-bold mb-4 text-blue-950"> Press to increase or decrease! </h2>
+    <p className="text-7xl text-blue-800 mb-8">{quantity}</p>
       {/* Decrement Button */}
-    <button type="button" className="bg-pink-800 text-pink-300 rounded px-6 py-3 hover:bg-pink-950" onClick={decrement} disabled={quantity === 1}>Decrease</button>
+    <button type="button" className="px-8 py-3 bg-blue-700 hover:bg-blue-900 text-white font-medium rounded " onClick={decrement} disabled={quantity === 1}>-</button>
       {/* Increment Button */}
-    <button type="button" className="bg-emerald-600 text-emerald-200 rounded px-6 py-3 hover:bg-emerald-800" onClick={increment} disabled={quantity === 20}>Increase</button>
+    <button type="button" className="px-8 py-3 bg-blue-700 hover:bg-blue-900 text-white font-medium rounded " onClick={increment} disabled={quantity === 20}>+</button>
     </div>
+    </section>
     );
 }
